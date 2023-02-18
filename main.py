@@ -13,8 +13,11 @@ def greet(name):
     print(f'''hey {name} nice way of committing version control,isn't it ?''')
 
 
-d = {'a': 'do'}
+d = {'a': 'do',
+     'b': 'go',
+     'c': 'help'}
 print('Lol')
+print(*d.items(), sep="\n")
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
