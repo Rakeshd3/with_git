@@ -1,2 +1,1 @@
-# with_git
-# git basic set up for a new pycharm project
+# This program will create a rectangle everytime we execute, default origin is (0,0)
