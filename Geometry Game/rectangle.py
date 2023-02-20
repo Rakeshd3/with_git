@@ -6,19 +6,17 @@ class Point:
         self.x = x
         self.y = y
 
-    def falls_in_rectangle(self, rect):
-        if rect.point1.x < self.x < rect.point2.x and \
-                rect.point1.y < self.y < rect.point2.y:
-            return True
-        else:
-            return False
-
     def set_point(self, new_x, new_y):
         self.x = new_x
         self.y = new_y
 
     def get_point(self):
         return self.x, self.y
+
+    def __repr__(self):
+        return f"{self.x},{self.y}"
+
+# This Class uses Point class to create a Rectangle
 
 
 class Rectangle:
@@ -41,6 +39,9 @@ class Rectangle:
         return self.breadth * self.height
 
 
+# turtle library implementation for creating a rectangle
+# This class basically inherit Rectangle Class
+# It draws a GUI version of rectangle
 class GUIRectangle(Rectangle):
 
     def draw(self, canvas):
